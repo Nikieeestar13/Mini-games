@@ -1,0 +1,90 @@
+
+<html>
+	<head>
+		<title>Number Guess</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+		<style>
+				body {
+					margin: 10px;
+					background: url("x.gif") no-repeat center center fixed;
+	                background-size:cover;
+					
+				}
+
+				.button {
+					font-family: cursive;
+					font-size: 1.5em;
+					width: 100px;
+					display: block;
+					margin: 25px auto;
+					border-radius: 20px;
+					text-align: center;
+					padding: 5px;
+					color: #FFF;
+					cursor: pointer;
+					box-shadow: 0 0 12px rgba(0, 225, 0, 1);
+					border: 3px double rgba(0, 225, 0, 1);
+					transition: 100ms width ease-in;
+				}
+
+				#historyArea {
+					margin-top: 20px;
+					padding-left: 5px;
+					padding-right: 5px;
+					width:20%;
+				}
+				.button:hover{
+					width: 170px;
+					}
+                 h1{text-shadow: 0 0 20px #fff, 0 0 30px #000073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;}
+				 h2,p{text-shadow: 0 0 10px #000,0 0 20px #fff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #003366, 0 0 60px #0000ff;}
+				#game {
+					background-color: black;
+					border-radius: 10px;
+					border-style: solid;
+					border-width: 3px;
+					border-color:#003366;
+					padding: 10px;
+					font-family:cursive;
+					text-align: center;
+					color:white;
+					width:60%;
+					height:90%;
+					margin:20px auto;
+                    overflow-x: hidden; 
+                    overflow-x: auto;
+					box-shadow: 0 0 20px #00ff00,0 0 40px #003366,0 0 50px #003366;
+				}
+                #userGuess{height:30px; 
+				            padding:10px;
+							font-family:cursive;
+							font-size:20;
+							text-align:center;}
+				#back{float:right; margin:10px; height:70px;}
+				#statusArea {
+					font-size: 120%;
+				}
+		</style>
+	</head>
+	<body>
+	<a href=main.html><image id=back src=arrow.png></a>
+	   <script src="guess.js"></script>
+		<div id="game">
+		
+		<center>	<h1><font size=50px>Guess the number</font></h1><br>
+			<div id="statusArea">
+				<p>Enter a number between 1-100 and click the button...</p>
+			</div>
+			<input type="number" id="userGuess"/>
+			<div id="buttonArea" class="button">
+				Guess
+			</div>
+			<div id="historyArea">
+				<h2>Your Previous Guesses</h2>
+				<ol id="historyList">
+				</ol>
+			</div>
+			</center>
+		</div>
+	</body>
+</html>

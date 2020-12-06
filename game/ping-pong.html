@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong Game JavaScript</title>
+    <style>
+        body{
+            background-color: black;
+			 font-family:"Rockwell";
+        }
+        #pong{
+           
+            position: absolute;
+			box-shadow: 0 0 20px rgba(81, 203, 238, 1);
+            border: 3px solid rgba(81, 203, 238, 1);
+			float:right;
+            margin-left:100px; 
+			margin-top :100px;
+            
+        }
+		#ping{
+		margin-top:150px;}
+		#back{float:right; margin:10px; height:70px;}
+    </style>
+</head>
+<body>
+   <image id="ping"  src=ping.jpg>
+   <a href=main.html><image id=back src=arrow.png></a>
+   <canvas id="pong" width="600" height="400"></canvas>
+   <script src="pong.js"></script>
+</body>
+</html>
